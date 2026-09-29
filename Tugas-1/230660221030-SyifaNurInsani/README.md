@@ -3,9 +3,9 @@
 
 |            |                                                   |
 | ---------- | ------------------------------------------------- |
-| **Nama**   | [Syifa Nur Insani]                                    |
-| **NIM**    | [230660221030]                                             |
-| **SI-VIIB**  | [Kelas]                                           |
+| **Nama**   | Syifa Nur Insani                                    |
+| **NIM**    | 230660221030                                             |
+| **Kelas**  | SI-VIIB                                           |
 | **Domain** | Aplikasi Perpustakaan Kampus — PustakaKu          |
 
 ---
