@@ -19,7 +19,7 @@ Bagian yang paling sulit dipertahankan konsistensinya adalah menyelaraskan atura
 
 ## 4 Struktur Folder
 ```text
-tugas6Deyna/
+tugas6_Deyna/
 ├── catatan-keputusan-navigasi.md
 ├── form-interaksi.dart
 ├── navigation-flow.md
