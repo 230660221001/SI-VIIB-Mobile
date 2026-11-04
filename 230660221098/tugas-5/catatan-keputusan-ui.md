@@ -1,0 +1,6 @@
+# Catatan Keputusan UI/UX — Pengaduan Fasilitas Kampus
+
+| Warna benih | `Colors.indigo` melalui `ColorScheme.fromSeed` | Warna netral dan formal yang cocok untuk layanan kampus. Semua warna turunan (utama, aksen, status) dibuat otomatis oleh tema sehingga kontras tetap terjaga, penting bagi Rani yang memakai ponsel di ruangan atau area terang |
+| Bentuk status | Ikon + teks + warna (Menunggu abu-abu/jam, Diproses aksen/panah berputar, Selesai utama/centang) | Mendukung F-05 (melihat status terbaru). Status tidak hanya mengandalkan warna agar tetap terbaca oleh pengguna dengan gangguan penglihatan warna dan saat layar redup |
+| Posisi aksi utama | `FloatingActionButton.extended` berlabel "Buat Laporan" di pojok kanan bawah | Membuat laporan (F-01) adalah aksi Must have yang paling sering dilakukan. Posisi bawah-kanan mudah dijangkau jempol saat satu tangan memegang ponsel, dan label teks membuat fungsinya jelas, sejalan dengan NF-01 (maksimal 5 ketukan) |
+| Hierarki teks | Judul laporan `titleMedium` tebal; lokasi dan kategori `bodySmall`; status `labelLarge` berwarna | Rani memakai aplikasi dalam sesi singkat sehingga perlu memindai cepat: judul paling menonjol, informasi pendukung lebih kecil, status mudah dikenali di sisi kanan |
