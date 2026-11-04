@@ -7,7 +7,6 @@
 | **Kelas** | SI-VIIB |
 | **Domain SI** | Manajemen Program Kerja Harian (Media/Konten) UKM Unsap Radio - RADIACT |
 | **Judul Aplikasi** | RadiAct (UNSAP Radio) |
-| **Tautan Repository** | [URL folder tugas-8 di repository GitHub kelas] |
 
 ## 1. Ringkasan Eksekutif Project
 Aplikasi **RadiAct (Radio Activity)** dirancang untuk digunakan oleh seluruh anggota UKM Unsap Radio sebagai pengguna dengan hak akses pemantauan (*view-only*), serta Ketua Divisi dan Badan Pengurus Harian sebagai pengelola yang memiliki wewenang untuk memperbarui data serta status operasional konten. Permasalahan utama yang dihadapi saat ini adalah jadwal publikasi konten yang terpusat di grup WhatsApp atau penyimpanan awan sering kali tertimbun mengakibatkan tingginya tingkat kelalaian tenggat waktu, alur koordinasi konfirmasi publikasi yang bersifat personal tanpa transparansi kepada pengurus, serta tingginya intensitas revisi jadwal harian yang memicu keterlambatan dan ketidakpastian eksekusi program kerja.
