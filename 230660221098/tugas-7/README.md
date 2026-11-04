@@ -1,0 +1,2 @@
+entitas Laporan pada aplikasi Pengaduan Fasilitas Kampus. Berkas yang dikumpulkan: [`model-data.md`](model-data.md) (entitas, field, dan sumber nilai), [`crud-lokal.dart`](crud-lokal.dart) (model, daftar `StatefulWidget`, tambah, baca, ubah dengan `indexWhere`, dan hapus dengan `removeWhere` serta konfirmasi `AlertDialog`), dua tangkapan layar, dan [`catatan-keputusan-data.md`](catatan-keputusan-data.md). Data disimpan di memori dan belum persisten.
+Deklarasi penggunaan AI: [gemini] — [membantu menyelesaikan kode yang eror]
