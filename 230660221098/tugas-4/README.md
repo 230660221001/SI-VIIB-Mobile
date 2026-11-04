@@ -1,0 +1,1 @@
+memuat analisis kebutuhan perangkat lunak dan perancangan User Flow untuk aplikasi pengaduan fasilitas kampus (LaporKampus). Dokumen mencakup penetapan 2 persona pengguna (mahasiswa pelapor dan staf sarpras), 6 kebutuhan fungsional, 2 kebutuhan nonfungsional terukur, pengelompokan prioritas fitur MoSCoW.
