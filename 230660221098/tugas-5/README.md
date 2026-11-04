@@ -1,0 +1,1 @@
+menjelaskan kebutuhan Tugas 4 menjadi rancangan antarmuka. Berkas yang dikumpulkan: information-architecture.md , wireframe.png, halaman-utama.dart , screenshot-halaman.png , dan catatan-keputusan-ui.md.
