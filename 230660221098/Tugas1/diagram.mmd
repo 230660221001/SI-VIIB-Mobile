@@ -1,0 +1,5 @@
+flowchart LR
+    A ["Aplikasi Mobile<br/>Pengaduan Fasilitas<br/>(Flutter - Mahasiswa)"] -->|"1. HTTP Request<br/>(POST laporan / GET status)"| B["Backend Pengaduan Fasilitas<br/>(REST API)"]
+    B -->|"2. Simpan / ambil data"| C[("Database Pengaduan<br/>laporan, lokasi, status, pengguna")]
+    C -->|"3. Hasil query"| B
+    B -->|"4. HTTP Response<br/>(JSON)"| A
