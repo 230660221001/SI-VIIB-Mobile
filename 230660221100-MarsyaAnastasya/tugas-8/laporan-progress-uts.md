@@ -7,7 +7,7 @@
 | **Kelas** | SI-VIIB |
 | **Domain SI** | Layanan Pelaporan dan Pengelolaan Fasilitas Fakultas |
 | **Judul Aplikasi** | Lapor Fasilitas FTI |
-| **Tautan Repository** | - |
+| **Tautan Repository** | https://github.com/PBWFEND/SI-VIIB-Mobile/tree/1b73b446726bf19c32a229e7122918147b8476ad/230660221100-MarsyaAnastasya/tugas-8 |
 
 ---
 
