@@ -22,14 +22,21 @@
       <sub>230660221018</sub>
     </td>
     <td align="center">
+      <a href="https://github.com/deynaangelyzahara">
+        <img src="https://avatars.githubusercontent.com/u/203216681?v=4&s=200" width="100px;" alt="deynaangelyzahara"/><br>
+        <sub><b>Deyna Angeliawati Zahara</b></sub>
+      </a><br>
+      <sub>230660221032</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
       <a href="https://github.com/FahreziEzzi">
         <img src="https://avatars.githubusercontent.com/u/136789115?v=4&s=200" width="100px;" alt="FahreziEzzi"/><br>
         <sub><b>Fahrezi</b></sub>
       </a><br>
       <sub>230660221113</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/230660221008">
         <img src="https://avatars.githubusercontent.com/u/202236808?v=4&s=200" width="100px;" alt="230660221008"/><br>
@@ -43,13 +50,6 @@
         <sub><b>230660221098</b></sub>
       </a><br>
       <sub>230660221098</sub>
-    </td>
-    <td align="center">
-      <a href="https://github.com/deynaangelyzahara">
-        <img src="https://avatars.githubusercontent.com/u/203216681?v=4&s=200" width="100px;" alt="deynaangelyzahara"/><br>
-        <sub><b>Deyna Angeliawati Zahara</b></sub>
-      </a><br>
-      <sub>230660221032</sub>
     </td>
   </tr>
   <tr>
@@ -91,6 +91,29 @@
       <sub>230660221094</sub>
     </td>
     <td align="center">
+      <a href="https://github.com/230660221033">
+        <img src="https://avatars.githubusercontent.com/u/203217708?v=4&s=200" width="100px;" alt="230660221033"/><br>
+        <sub><b>Yelly Ambarwaty</b></sub>
+      </a><br>
+      <sub>230660221033</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/230660221085">
+        <img src="https://avatars.githubusercontent.com/u/204163481?v=4&s=200" width="100px;" alt="230660221085"/><br>
+        <sub><b>230660221085</b></sub>
+      </a><br>
+      <sub>230660221085</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/akhydianerwin">
+        <img src="https://avatars.githubusercontent.com/u/203215930?v=4&s=200" width="100px;" alt="akhydianerwin"/><br>
+        <sub><b>Dian Erwin</b></sub>
+      </a><br>
+      <sub>230660221022</sub>
+    </td>
+    <td align="center">
       <a href="https://github.com/230660221113">
         <img src="https://avatars.githubusercontent.com/u/202504755?v=4&s=200" width="100px;" alt="230660221113"/><br>
         <sub><b>Muhammad Andre Nugraha</b></sub>
@@ -100,6 +123,13 @@
   </tr>
   <tr>
     <td align="center">
+      <a href="https://github.com/PaizalRizkiNugraha">
+        <img src="https://avatars.githubusercontent.com/u/203218494?v=4&s=200" width="100px;" alt="PaizalRizkiNugraha"/><br>
+        <sub><b>230660221012</b></sub>
+      </a><br>
+      <sub>230660221012</sub>
+    </td>
+    <td align="center">
       <a href="https://github.com/230660221024">
         <img src="https://avatars.githubusercontent.com/u/211926361?v=4&s=200" width="100px;" alt="230660221024"/><br>
         <sub><b>230660221024</b></sub>
@@ -107,28 +137,14 @@
       <sub>230660221024</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/230660221033">
-        <img src="https://avatars.githubusercontent.com/u/203217708?v=4&s=200" width="100px;" alt="230660221033"/><br>
-        <sub><b>Yelly Ambarwaty</b></sub>
-      </a><br>
-      <sub>230660221033</sub>
-    </td>
-    <td align="center">
-      <a href="https://github.com/230660221085">
-        <img src="https://avatars.githubusercontent.com/u/204163481?v=4&s=200" width="100px;" alt="230660221085"/><br>
-        <sub><b>230660221085</b></sub>
-      </a><br>
-      <sub>230660221085</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
       <a href="https://github.com/230660221114">
         <img src="https://avatars.githubusercontent.com/u/203218116?v=4&s=200" width="100px;" alt="230660221114"/><br>
         <sub><b>Talitha Ardelia Ivana</b></sub>
       </a><br>
       <sub>230660221114</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/Panjii7">
         <img src="https://avatars.githubusercontent.com/u/203955599?v=4&s=200" width="100px;" alt="Panjii7"/><br>
@@ -137,27 +153,11 @@
       <sub>Mahasiswa</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/PaizalRizkiNugraha">
-        <img src="https://avatars.githubusercontent.com/u/203218494?v=4&s=200" width="100px;" alt="PaizalRizkiNugraha"/><br>
-        <sub><b>230660221012</b></sub>
-      </a><br>
-      <sub>230660221012</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
       <a href="https://github.com/230660221100">
         <img src="https://avatars.githubusercontent.com/u/204187104?v=4&s=200" width="100px;" alt="230660221100"/><br>
         <sub><b>Marsya Anastasya</b></sub>
       </a><br>
       <sub>230660221100</sub>
-    </td>
-    <td align="center">
-      <a href="https://github.com/akhydianerwin">
-        <img src="https://avatars.githubusercontent.com/u/203215930?v=4&s=200" width="100px;" alt="akhydianerwin"/><br>
-        <sub><b>Dian Erwin</b></sub>
-      </a><br>
-      <sub>Mahasiswa</sub>
     </td>
     <td align="center">
       <a href="https://github.com/230660221102">
