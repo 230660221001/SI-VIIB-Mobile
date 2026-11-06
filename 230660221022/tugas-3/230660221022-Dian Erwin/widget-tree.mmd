@@ -1,0 +1,24 @@
+graph TD
+    A[MaterialApp] --> B[LabKomputerPage / Scaffold]
+    B --> C[AppBar: Monitoring Lab Komputer]
+    B --> D[body: Padding]
+    B --> E[floatingActionButton: FloatingActionButton]
+
+    D --> F[Column]
+    F --> G[Card: Header Info]
+    F --> H[SizedBox: Spasi]
+    F --> I[Text: Judul Bagian]
+    F --> J[Expanded]
+
+    G --> K[Padding]
+    K --> L[Row: Ikon + Teks Info]
+    L --> M[Icon: Computer]
+    L --> N[SizedBox]
+    L --> O[Column: Informasi Kampus & Total Unit]
+
+    J --> P[ListView.builder]
+    P --> Q[Card: Perangkat Item]
+    Q --> R[ListTile]
+    R --> S[leading: CircleAvatar]
+    R --> T[title: Row Kode & Status Badge]
+    R --> U[subtitle: Column Spesifikasi & Lokasi]

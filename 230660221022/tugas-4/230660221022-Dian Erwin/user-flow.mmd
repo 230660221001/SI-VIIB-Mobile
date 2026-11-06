@@ -1,0 +1,18 @@
+flowchart TD
+    Start([Mulai: Buka Aplikasi]) --> H1[Halaman Utama: Daftar PC]
+    H1 --> P1[Pilih PC yang terindikasi rusak]
+    P1 --> H2[Halaman Form Pelaporan]
+    H2 --> P2[Isi deskripsi kerusakan]
+    P2 --> P3[Ambil foto bukti dengan kamera perangkat]
+    P3 --> D1{Apakah foto jelas/fokus?}
+    
+    D1 -- Tidak --> P3
+    D1 -- Ya --> P4[Tekan tombol 'Kirim Laporan']
+    
+    P4 --> D2{Apakah deskripsi terisi lengkap?}
+    D2 -- Tidak --> P5[Tampilkan pesan error/peringatan]
+    P5 --> H2
+    
+    D2 -- Ya --> P6[Sistem menyimpan laporan]
+    P6 --> H3[Halaman Riwayat: Muncul notifikasi sukses]
+    H3 --> End([Tujuan Tercapai])

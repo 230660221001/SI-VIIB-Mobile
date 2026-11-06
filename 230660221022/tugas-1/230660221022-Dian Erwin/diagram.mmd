@@ -1,0 +1,5 @@
+flowchart LR
+    A["Aplikasi Mobile Lab Komputer<br/>(Murid / Guru)"] -->|"HTTP Request<br/>(login, kirim laporan + foto, ambil data)"| B["Backend Lab Komputer"]
+    B -->|"Query / Simpan"| C[("Database Lab<br/>perangkat, laporan, pengguna")]
+    C -->|"Data"| B
+    B -->|"HTTP Response<br/>(JSON: daftar perangkat, status laporan)"| A
