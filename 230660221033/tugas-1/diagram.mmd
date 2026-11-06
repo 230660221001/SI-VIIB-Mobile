@@ -1,0 +1,5 @@
+flowchart LR
+    A["Aplikasi Mobile<br>(Flutter - Anggota/Relawan)"] -->|"HTTP Request<br>(JSON)"| B["Backend Panti Baca<br>(REST API)"]
+    B -->|"Query atau perubahan data"| C[("Database<br>Koleksi & Peminjaman")]
+    C -->|"Data hasil query"| B
+    B -->|"HTTP Response<br>(JSON)"| A
