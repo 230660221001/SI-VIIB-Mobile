@@ -1,6 +1,6 @@
 # Tugas 8 — Evaluasi Tengah Semester (Milestone M4)
 
-Folder ini berisi dokumen pengumpulan Ujian Tengah Semester (UTS) untuk proyek **Lapor Fasilitas FTI**.
+Folder ini berisi dokumen pengumpulan Ujian Tengah Semester (UTS) untuk proyek **Akademik PKBM Al Qosimmiyah**.
 
 ## Daftar Isi Pengumpulan
 
@@ -15,7 +15,7 @@ Folder ini berisi dokumen pengumpulan Ujian Tengah Semester (UTS) untuk proyek *
 
 ## Deskripsi Project
 
-**Lapor Fasilitas FTI** merupakan aplikasi mobile untuk membantu pengguna melaporkan kerusakan fasilitas fakultas dan membantu petugas dalam mengelola serta memantau laporan kerusakan.
+**Akademik PKBM Al Qosimmiyah** merupakan aplikasi mobile yang dikembangkan untuk memudahkan warga belajar dalam memperoleh informasi akademik. Aplikasi ini menyediakan informasi mengenai nilai akademik, jadwal pelajaran, dan jadwal ujian sehingga pengguna dapat mengakses informasi pembelajaran dengan lebih praktis melalui smartphone.
 
 ## Milestone
 
