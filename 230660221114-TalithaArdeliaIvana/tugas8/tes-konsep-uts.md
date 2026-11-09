@@ -10,13 +10,13 @@ Aplikasi mobile dapat digunakan melalui smartphone kapan saja dan di mana saja t
 
 Contoh penerapan: Mahasiswa membuka aplikasi melalui HP, memilih jenis surat keterangan yang dibutuhkan, kemudian mengisi formulir pengajuan secara online.
 
-2. Notifikasi Secara Langsung (Real-Time Notification)
+**2. Notifikasi Secara Langsung (Real-Time Notification)**
 
 Aplikasi mobile dapat memberikan pemberitahuan secara langsung kepada pengguna mengenai perkembangan proses pengajuan surat. Dengan demikian, mahasiswa tidak perlu terus-menerus datang ke loket untuk menanyakan status permohonannya.
 
 Contoh penerapan: Setelah mengajukan surat, mahasiswa mendapatkan notifikasi bahwa permohonan sedang diproses, telah disetujui, atau perlu diperbaiki.
 
-3. Pemanfaatan Fitur Perangkat Mobile
+**3. Pemanfaatan Fitur Perangkat Mobile**
 
 Aplikasi mobile dapat memanfaatkan fitur bawaan smartphone, seperti kamera, GPS, dan penyimpanan dokumen. Fitur tersebut dapat membantu mahasiswa melengkapi persyaratan pengajuan surat dengan lebih mudah.
 
@@ -26,27 +26,27 @@ Contoh penerapan: Mahasiswa dapat mengambil foto KTP atau mengunggah dokumen per
 
 Berikut penjelasan fungsi setiap bagian kode Dart:
 
-1. List<String>
+**1. List<String>**
 
 Digunakan untuk membuat sebuah daftar atau kumpulan data yang hanya dapat menyimpan nilai bertipe teks (String). Pada kode tersebut, daftarSurat digunakan untuk menampung berbagai jenis surat yang diajukan mahasiswa.
 
-2. Parameter String jenis
+**2. Parameter String jenis**
 
 Merupakan parameter yang digunakan untuk menerima masukan berupa teks dari pengguna. Contohnya, pengguna memasukkan jenis surat seperti Surat Keterangan Aktif Kuliah atau Surat Pengantar.
 
-3. isEmpty
+**3. isEmpty**
 
 Digunakan untuk memeriksa apakah teks yang dimasukkan kosong atau tidak. Jika pengguna tidak mengisi jenis surat, program akan menampilkan pesan bahwa jenis surat tidak boleh kosong.
 
-4. return pada kondisi error
+**4. return pada kondisi error**
 
 Berfungsi untuk menghentikan proses di dalam fungsi tambahSurat() ketika ditemukan kesalahan. Dengan demikian, data kosong tidak akan diteruskan ke daftar surat.
 
-5. daftarSurat.add(jenis)
+**5. daftarSurat.add(jenis)**
 
 Digunakan untuk menambahkan data baru ke dalam List. Pada kode tersebut, daftarSurat.add(jenis) memasukkan jenis surat yang sudah lolos validasi ke dalam daftar.
 
-6. Perulangan for
+**6. Perulangan for**
 
 Digunakan untuk mengulang proses berdasarkan jumlah data yang tersimpan dalam daftar. Perulangan ini membantu menampilkan seluruh jenis surat satu per satu dengan nomor urut.
 
@@ -56,27 +56,27 @@ Jika validasi isEmpty dihapus, pengguna dapat memasukkan data kosong sehingga da
 
 ## Soal 3 — Struktur Flutter dan Widget
 
-1. MaterialApp
+**1. MaterialApp**
 
 Merupakan widget utama yang digunakan untuk membangun aplikasi dengan desain Material Design. Widget ini mengatur tema, navigasi, dan halaman utama aplikasi.
 
-2. Scaffold
+**2. Scaffold**
 
 Berfungsi sebagai kerangka dasar halaman aplikasi. Scaffold menyediakan struktur seperti AppBar, body, dan bagian lainnya.
 
-3. AppBar
+**3. AppBar**
 
 Digunakan sebagai bilah bagian atas halaman yang menampilkan judul atau tombol navigasi. Pada kode tersebut, AppBar menampilkan judul "Daftar Surat".
 
-4. Column
+**4. Column**
 
 Berfungsi untuk menyusun beberapa widget secara vertikal atau dari atas ke bawah. Dalam kode tersebut, Column menampilkan teks dan daftar surat secara berurutan.
 
-5. Text
+**5. Text**
 
 Digunakan untuk menampilkan tulisan pada layar. Contohnya, tulisan "Pilih jenis surat" sebagai petunjuk kepada pengguna.
 
-6. ListView.builder
+**6. ListView.builder**
 
 Digunakan untuk menampilkan daftar data secara dinamis. Widget ini membuat item daftar sesuai jumlah data yang tersedia sehingga lebih efisien untuk menampilkan banyak jenis surat.
 
@@ -85,6 +85,8 @@ Digunakan untuk menampilkan daftar data secara dinamis. Widget ini membuat item 
 Masalah yang dapat terjadi adalah munculnya error unbounded height atau tinggi ListView tidak memiliki batas yang jelas. Hal ini terjadi karena Column tidak memberikan batas tinggi tertentu kepada ListView sehingga Flutter kesulitan menentukan ukuran area daftar.
 
 Cara memperbaikinya adalah dengan membungkus ListView.builder menggunakan widget Expanded, seperti berikut:
+
+```dart
 Column(
   children: [
     Text('Pilih jenis surat'),
@@ -100,16 +102,16 @@ Column(
     ),
   ],
 )
-
+```
 
 Dengan menggunakan Expanded, ListView akan mengisi sisa ruang yang tersedia sehingga daftar surat dapat ditampilkan tanpa menyebabkan error.
 
 ## Soal 4 — Analisis Kebutuhan dan User Flow
 
-A. Identifikasi Kebutuhan Fungsional dan Nonfungsional
+**Identifikasi Kebutuhan Fungsional dan Nonfungsional**
 Berdasarkan permintaan mahasiswa, kebutuhan aplikasi pengajuan surat dapat dibagi menjadi dua jenis:
 
-1. Kebutuhan Fungsional
+**1. Kebutuhan Fungsional**
 
 Kebutuhan fungsional merupakan fitur yang dapat dilakukan oleh aplikasi untuk memenuhi kebutuhan pengguna.
 1. Mahasiswa dapat mengisi dan mengirim formulir pengajuan surat keterangan aktif kuliah secara online.
@@ -122,7 +124,8 @@ Kebutuhan nonfungsional merupakan standar kualitas yang harus dimiliki aplikasi 
 2. Data pribadi dan dokumen mahasiswa harus tersimpan dengan aman.
 3. Aplikasi harus memberikan respons yang cepat ketika mahasiswa mengirim pengajuan atau melihat status surat.
 4. Notifikasi harus dikirim secara tepat waktu agar mahasiswa tidak terlambat mengetahui informasi surat.
-B. Penentuan Prioritas MoSCoW
+
+**Penentuan Prioritas MoSCoW**
 Kebutuhan	Jenis	Prioritas	Alasan
 Pengajuan surat aktif kuliah	Fungsional	Must	Merupakan tujuan utama aplikasi.
 Melihat status pengajuan	Fungsional	Must	Mahasiswa perlu mengetahui perkembangan surat tanpa datang ke loket.
@@ -138,7 +141,8 @@ Penjelasan MoSCoW:
 - Should: Kebutuhan penting, tetapi masih bisa ditunda pada pengembangan awal.
 - Could: Fitur tambahan yang dapat dikembangkan jika masih ada waktu.
 - Won't: Fitur yang belum akan diterapkan pada versi aplikasi saat ini.
-C. User Flow untuk Kebutuhan Must
+
+**User Flow untuk Kebutuhan Must**
 Berikut alur penggunaan aplikasi untuk proses pengajuan surat keterangan aktif kuliah:
 1. Mahasiswa membuka aplikasi melalui smartphone.
 2. Mahasiswa melakukan login menggunakan akun yang telah terdaftar.
@@ -155,19 +159,19 @@ Berikut alur penggunaan aplikasi untuk proses pengajuan surat keterangan aktif k
 
 ## Soal 5 — UI/UX Mobile
 
-1. Kesederhanaan Tampilan (Simplicity)
+**1. Kesederhanaan Tampilan (Simplicity)**
 
 Keputusan desain: Saya akan membuat tampilan daftar surat menggunakan bentuk card yang tersusun secara vertikal. Setiap card menampilkan nama surat, status pengajuan, dan tombol ajukan. Saya juga akan menyediakan fitur pencarian agar mahasiswa lebih mudah menemukan jenis surat yang dibutuhkan.
 
 Alasan: Ukuran layar smartphone terbatas sehingga informasi harus disusun secara sederhana dan tidak terlalu banyak elemen dalam satu halaman. Dengan adanya pencarian, mahasiswa tidak perlu menggulir seluruh 20 jenis surat.
 
-2. Kemudahan Interaksi Sentuh (Touch-Friendly Design)
+**2. Kemudahan Interaksi Sentuh (Touch-Friendly Design)**
 
 Keputusan desain: Saya akan membuat tombol Ajukan dengan ukuran yang cukup besar, mudah ditekan, dan memiliki jarak antar tombol. Warna tombol dibuat kontras agar mudah dibedakan dari informasi lainnya.
 
 Alasan: Pengguna smartphone berinteraksi menggunakan jari, bukan mouse. Tombol yang terlalu kecil atau berdekatan dapat menyebabkan kesalahan saat ditekan. Oleh karena itu, tombol harus mudah dijangkau dan digunakan.
 
-3. Efisiensi Penggunaan (Efficiency)
+**3. Efisiensi Penggunaan (Efficiency)**
 
 Keputusan desain: Saya akan menampilkan nama surat dan status secara langsung pada setiap card, serta menggunakan warna berbeda untuk membedakan status, misalnya hijau untuk disetujui, kuning untuk diproses, dan merah untuk ditolak. Proses pengajuan dibuat singkat dengan formulir yang sederhana.
 
@@ -178,7 +182,7 @@ Alasan: Mahasiswa biasanya menggunakan aplikasi dalam waktu singkat. Dengan info
 **A. Implementasi Navigasi Antarhalaman**
 Terdapat tiga metode navigasi yang dapat digunakan:
 
-1. Navigator.push()
+**1. Navigator.push()**
 
 Digunakan untuk membuka halaman baru dari halaman yang sedang ditampilkan.
 
@@ -191,7 +195,7 @@ Navigator.push(
 );
 
 
-2. Navigator.pushNamed()
+**2. Navigator.pushNamed()**
 
 Digunakan untuk berpindah halaman berdasarkan nama atau route yang sudah didaftarkan sebelumnya.
 
@@ -203,7 +207,7 @@ Navigator.pushNamed(
 );
 
 
-3. Navigator.pop()
+**3. Navigator.pop()**
 
 Digunakan untuk kembali ke halaman sebelumnya dengan menutup halaman yang sedang dibuka.
 
@@ -297,7 +301,7 @@ setState() merupakan fungsi dalam Flutter yang digunakan untuk memberi tahu sist
 CRUD merupakan singkatan dari Create, Read, Update, dan Delete. Keempat operasi ini digunakan untuk mengelola data pengajuan surat yang tersimpan di dalam aplikasi.
 
 **A. Empat Operasi CRUD dan Method List**
-1. Create (Menambahkan Data)
+**1. Create (Menambahkan Data)**
 
 Create merupakan proses untuk menambahkan data pengajuan surat baru ke dalam daftar.
 
@@ -313,7 +317,7 @@ daftarSurat.add(
   ),
 );
 
-2. Read (Membaca Data)
+**2. Read (Membaca Data)**
 
 Read merupakan proses untuk mengambil dan menampilkan data pengajuan surat yang sudah tersimpan.
 
@@ -325,7 +329,7 @@ for (var surat in daftarSurat) {
   print(surat.status);
 }
 
-3. Update (Mengubah Data)
+**3. Update (Mengubah Data)**
 
 Update merupakan proses untuk memperbarui informasi pengajuan surat, misalnya mengubah status dari Menunggu menjadi Disetujui.
 
@@ -345,7 +349,7 @@ if (index != -1) {
   );
 }
 
-4. Delete (Menghapus Data)
+**4. Delete (Menghapus Data)**
 
 Delete merupakan proses untuk menghapus pengajuan surat tertentu dari daftar.
 
@@ -417,103 +421,86 @@ Contohnya, ketika mahasiswa sedang mengisi formulir pengajuan surat dan data han
 
 Contohnya, ketika mahasiswa sudah mengirim pengajuan surat dan ingin melihat kembali statusnya setelah aplikasi ditutup. Data pengajuan harus tetap tersimpan agar tidak hilang ketika aplikasi dibuka kembali.
 
-## Soal 10 — Integrasi Konsep Lintas Pertemuan
+## Soal 10 — Perancangan Aplikasi Bergerak (CPMK-2)
 
-1. Arsitektur Aplikasi
-Arsitektur aplikasi terdiri dari tiga bagian utama, yaitu aplikasi mobile, penyimpanan lokal, dan backend Sistem Informasi.
+Aplikasi peminjaman buku perpustakaan dapat dikembangkan menggunakan Flutter sebagai aplikasi mobile, API sebagai penghubung antara aplikasi dan server, serta MySQL sebagai tempat penyimpanan data utama.
 
-Penjelasan hubungan antarbagian:
-1. Aplikasi Mobile (Flutter): Digunakan mahasiswa untuk melihat katalog buku, mengisi formulir peminjaman, dan melihat riwayat peminjaman.
-2. Penyimpanan Lokal (SharedPreferences): Digunakan untuk menyimpan informasi sederhana, seperti preferensi pengguna atau data sementara.
-3. Backend Sistem Informasi: Bertugas memproses permintaan peminjaman, mengelola data buku, memeriksa ketersediaan buku, dan menyimpan transaksi ke database.
-Gambaran arsitektur:
-       MAHASISWA
-           |
-           v
-   APLIKASI MOBILE
-       (Flutter)
-           |
-      +----+----+
-      |         |
-      v         v
-PENYIMPANAN   BACKEND SI
-   LOKAL      (PHP/API)
-      |         |
-      |         v
-      |      DATABASE
-      |       MySQL
-      |         |
-      +---------+
+**A. Arsitektur aplikasi**
 
+Komponen yang digunakan dalam aplikasi adalah:
 
-Aplikasi mobile berkomunikasi dengan backend melalui API. Penyimpanan lokal digunakan untuk kebutuhan data sederhana, sedangkan data utama buku dan transaksi peminjaman disimpan di database server agar dapat dikelola secara terpusat.
-2. Kebutuhan dan Alur Pengguna
-A. Dua Kebutuhan Must Have
-No.	Kebutuhan	Alasan
-1	Mahasiswa dapat melihat katalog dan ketersediaan buku.	Agar mahasiswa mengetahui buku yang dapat dipinjam sebelum mengajukan peminjaman.
-2	Mahasiswa dapat mengajukan peminjaman dan melihat riwayatnya.	Agar proses peminjaman tercatat dan mahasiswa dapat mengetahui transaksi yang pernah dilakukan.
+| Komponen | Fungsi |
+|---|---|
+| Flutter | Membuat tampilan dan interaksi aplikasi mobile. |
+| UI dan navigasi | Mengatur halaman katalog, detail buku, dan riwayat peminjaman. |
+| Pengelolaan state | Memperbarui tampilan ketika data berubah. |
+| REST API | Menghubungkan aplikasi mobile dengan server. |
+| Backend | Memproses permintaan peminjaman dan pengelolaan buku. |
+| MySQL | Menyimpan data buku dan transaksi peminjaman. |
+| Penyimpanan lokal | Menyimpan preferensi atau data sementara yang diperlukan. |
 
-B. User Flow Peminjaman Buku
-1. Mahasiswa membuka aplikasi perpustakaan melalui smartphone.
-2. Mahasiswa melakukan login menggunakan akun yang terdaftar.
-3. Sistem menampilkan halaman beranda.
-4. Mahasiswa memilih menu katalog buku.
-5. Sistem menampilkan daftar buku beserta judul, penulis, dan status ketersediaannya.
-6. Mahasiswa memilih buku yang ingin dipinjam.
-7. Sistem menampilkan detail buku.
-8. Mahasiswa menekan tombol Pinjam Buku.
-9. Sistem menampilkan formulir peminjaman.
-10. Mahasiswa mengisi data peminjaman dan menekan tombol kirim.
-11. Backend memeriksa ketersediaan buku dan menyimpan transaksi jika memenuhi ketentuan.
-12. Sistem menampilkan informasi bahwa peminjaman berhasil.
-13. Mahasiswa membuka menu riwayat untuk melihat data peminjaman.
-3. Struktur Komponen dan Navigasi
-Aplikasi dibuat menggunakan Flutter dengan beberapa widget utama.
+```mermaid
+flowchart TD
+    A[Pengguna] --> B[Aplikasi Mobile Flutter]
+    B --> C[UI dan Navigasi]
+    C --> D[Pengelolaan State]
+    D --> E[REST API]
+    E --> F[Backend Server]
+    F --> G[(Database MySQL)]
+    D --> H[Data Lokal untuk Cache dan Preferensi]
+```
 
-A. Halaman Katalog Buku
+**B. Dua kebutuhan utama aplikasi**
 
-Widget yang digunakan:
-- MaterialApp: Mengatur konfigurasi utama aplikasi.
-- Scaffold: Menyediakan struktur halaman.
-- AppBar: Menampilkan judul halaman katalog.
-- Column: Menyusun komponen secara vertikal.
-- TextField: Menyediakan kolom pencarian buku.
-- ListView.builder: Menampilkan daftar buku secara dinamis.
-- Card: Menampilkan informasi setiap buku.
-- ElevatedButton: Menyediakan tombol untuk melakukan peminjaman.
-B. Halaman Form Peminjaman
+1. **Melihat katalog dan ketersediaan buku**
 
-Widget yang digunakan:
-- Scaffold: Menjadi kerangka halaman formulir.
-- AppBar: Menampilkan judul Form Peminjaman.
-- Text: Menampilkan informasi buku yang dipilih.
-- TextField: Mengisi data yang diperlukan.
-- ElevatedButton: Mengirim permohonan peminjaman.
-- SnackBar: Memberikan informasi berhasil atau gagal.
-C. Navigasi Antarhalaman
+   Pengguna dapat mencari buku berdasarkan judul, penulis, atau kategori. Aplikasi juga menampilkan informasi apakah buku masih tersedia untuk dipinjam.
 
-Navigasi menggunakan Navigator.
+2. **Mengajukan peminjaman dan melihat riwayat**
 
-Contoh berpindah dari katalog ke form peminjaman:
-Navigator.push(
-  context,
-  MaterialPageRoute(
-    builder: (context) => FormPeminjamanPage(
-      buku: buku,
-    ),
-  ),
-);
+   Pengguna dapat memilih buku, mengirim permohonan peminjaman, serta melihat daftar transaksi yang pernah dilakukan.
 
+**C. User Flow peminjaman buku**
 
-Untuk kembali ke halaman katalog:
-Navigator.pop(context);
+```mermaid
+flowchart TD
+    A([Mulai]) --> B[Pengguna membuka aplikasi]
+    B --> C[Melihat katalog buku]
+    C --> D[Memilih buku]
+    D --> E[Melihat detail buku]
+    E --> F{Buku tersedia?}
+    F -- Tidak --> G[Menampilkan informasi buku tidak tersedia]
+    G --> C
+    F -- Ya --> H[Mengisi formulir peminjaman]
+    H --> I[Mengirim permohonan]
+    I --> J[Sistem memvalidasi permohonan]
+    J --> K{Permohonan valid?}
+    K -- Tidak --> L[Menampilkan pesan kesalahan]
+    L --> H
+    K -- Ya --> M[Menyimpan transaksi peminjaman]
+    M --> N[Menampilkan konfirmasi]
+    N --> O[Melihat riwayat peminjaman]
+    O --> P([Selesai])
+```
 
+**D. Widget Flutter yang digunakan**
 
-Data buku dikirim melalui parameter constructor sehingga halaman form dapat menampilkan informasi buku yang dipilih mahasiswa.
-4. Data dan State
-A. Definisi Model Data Buku
+| Widget | Fungsi |
+|---|---|
+| `MaterialApp` | Mengatur aplikasi secara keseluruhan. |
+| `Scaffold` | Menyusun struktur setiap halaman. |
+| `AppBar` | Menampilkan judul halaman. |
+| `TextField` | Memasukkan kata kunci pencarian buku. |
+| `ListView.builder` | Menampilkan katalog buku. |
+| `Card` | Menyajikan informasi buku dalam bentuk kartu. |
+| `ElevatedButton` | Menjalankan tindakan peminjaman. |
+| `Navigator` | Mengatur perpindahan halaman. |
 
-Model Buku digunakan untuk menyimpan informasi setiap buku yang tersedia di perpustakaan.
+**E. Model data buku**
+
+Model `Buku` digunakan untuk menggambarkan informasi setiap buku yang tersedia di perpustakaan.
+
+```dart
 class Buku {
   final String id;
   final String judul;
@@ -521,7 +508,7 @@ class Buku {
   final String kategori;
   final bool tersedia;
 
-  const Buku({
+  Buku({
     required this.id,
     required this.judul,
     required this.penulis,
@@ -529,55 +516,83 @@ class Buku {
     required this.tersedia,
   });
 }
+```
 
+**Penjelasan atribut:**
 
-Fungsi masing-masing field:
-Field	Fungsi
-id	Identitas unik setiap buku.
-judul	Menyimpan judul buku.
-penulis	Menyimpan nama penulis buku.
-kategori	Menyimpan kategori buku.
-tersedia	Menunjukkan apakah buku dapat dipinjam.
+- `id`: kode unik untuk membedakan setiap buku.
+- `judul`: nama atau judul buku.
+- `penulis`: nama penulis buku.
+- `kategori`: kelompok atau jenis buku.
+- `tersedia`: menunjukkan apakah buku dapat dipinjam.
 
-B. Pengelolaan Create dan Read dalam State
+Untuk mencatat transaksi peminjaman, aplikasi juga dapat menggunakan model terpisah seperti berikut:
 
-Pengelolaan data menggunakan StatefulWidget karena daftar peminjaman dapat berubah ketika mahasiswa melakukan transaksi.
+```dart
+class Peminjaman {
+  final String id;
+  final String bukuId;
+  final String judulBuku;
+  final String tanggalPinjam;
+  final String status;
 
-1. Create (Meminjam Buku)
-
-Operasi Create digunakan untuk menambahkan transaksi peminjaman baru ke dalam daftar.
-
-Method List yang digunakan adalah add().
-
-Contoh:
-List<Map<String, String>> riwayatPinjam = [];
-
-void tambahPeminjaman(String judul) {
-  setState(() {
-    riwayatPinjam.add({
-      'judul': judul,
-      'status': 'Menunggu',
-    });
+  Peminjaman({
+    required this.id,
+    required this.bukuId,
+    required this.judulBuku,
+    required this.tanggalPinjam,
+    required this.status,
   });
 }
+```
 
+**F. Penerapan Create dan Read**
 
-Ketika mahasiswa berhasil mengajukan peminjaman, data transaksi ditambahkan ke daftar dan setState() digunakan agar tampilan diperbarui.
+**Create (menambahkan transaksi peminjaman)**
 
-2. Read (Melihat Riwayat Peminjaman)
+Ketika pengguna mengajukan peminjaman, sistem membuat data transaksi baru. Pada contoh sederhana, data dapat dimasukkan ke dalam list menggunakan `setState()`.
 
-Operasi Read digunakan untuk membaca dan menampilkan seluruh transaksi peminjaman yang telah tersimpan.
+```dart
+List<Peminjaman> daftarPeminjaman = [];
 
-Contoh:
+void tambahPeminjaman(Buku buku) {
+  if (!buku.tersedia) {
+    return;
+  }
+
+  setState(() {
+    daftarPeminjaman.add(
+      Peminjaman(
+        id: 'PINJAM001',
+        bukuId: buku.id,
+        judulBuku: buku.judul,
+        tanggalPinjam: '09 November 2026',
+        status: 'Menunggu Persetujuan',
+      ),
+    );
+  });
+}
+```
+
+**Read (menampilkan data peminjaman)**
+
+Data transaksi yang telah tersimpan dapat ditampilkan menggunakan `ListView.builder`.
+
+```dart
 ListView.builder(
-  itemCount: riwayatPinjam.length,
+  itemCount: daftarPeminjaman.length,
   itemBuilder: (context, index) {
+    final data = daftarPeminjaman[index];
+
     return ListTile(
-      title: Text(riwayatPinjam[index]['judul']!),
-      subtitle: Text(riwayatPinjam[index]['status']!),
+      title: Text(data.judulBuku),
+      subtitle: Text(
+        'Tanggal: ${data.tanggalPinjam}\n'
+        'Status: ${data.status}',
+      ),
     );
   },
 );
+```
 
-
-Dengan ListView.builder, mahasiswa dapat melihat daftar buku yang pernah diajukan untuk dipinjam beserta statusnya.
+Contoh tersebut menggambarkan pengelolaan data pada sisi aplikasi. Untuk penggunaan nyata, validasi ketersediaan buku dan penyimpanan transaksi harus dilakukan melalui backend dan database agar data peminjaman tetap konsisten serta dapat diakses oleh petugas perpustakaan.
