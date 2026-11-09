@@ -301,6 +301,7 @@ setState() merupakan fungsi dalam Flutter yang digunakan untuk memberi tahu sist
 CRUD merupakan singkatan dari Create, Read, Update, dan Delete. Keempat operasi ini digunakan untuk mengelola data pengajuan surat yang tersimpan di dalam aplikasi.
 
 **A. Empat Operasi CRUD dan Method List**
+
 **1. Create (Menambahkan Data)**
 
 Create merupakan proses untuk menambahkan data pengajuan surat baru ke dalam daftar.
