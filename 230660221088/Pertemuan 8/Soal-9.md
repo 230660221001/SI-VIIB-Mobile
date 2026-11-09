@@ -1,0 +1,7 @@
+Penyimpanan in-memory berarti data berada di memori aplikasi, misalnya pada `List<PengajuanSurat>` di dalam state. Data dapat ditambah, dibaca, diubah, dan dihapus selama aplikasi berjalan, tetapi biasanya hilang ketika aplikasi ditutup atau prosesnya berakhir.
+
+`shared_preferences` menyediakan penyimpanan lokal berbentuk pasangan key-value sehingga data sederhana dapat dibaca kembali setelah aplikasi dibuka. Jika model memiliki beberapa field, data dapat diubah menjadi teks JSON sebelum disimpan, lalu dibaca dan diubah kembali menjadi objek ketika aplikasi dijalankan.
+
+Operasi `shared_preferences` bersifat asinkron dan mengembalikan `Future` karena proses baca atau tulis penyimpanan tidak selalu selesai seketika. Kata kunci `await` digunakan agar proses berikutnya menunggu operasi tersebut selesai. Jika `await` diabaikan, kode dapat melanjutkan proses sebelum penyimpanan selesai. Akibatnya, urutan proses menjadi tidak terjamin dan perubahan mungkin belum selesai tersimpan ketika aplikasi ditutup.
+
+In-memory sudah cukup untuk demo, prototype, atau data sementara yang tidak perlu dipertahankan. Persistensi diperlukan untuk data penting seperti riwayat pengajuan surat yang harus tetap tersedia setelah mahasiswa menutup dan membuka aplikasi kembali.
