@@ -2,7 +2,6 @@
 
 ## Soal 1 — Konsep Aplikasi Bergerak dalam Sistem Informasi
 
-Soal 1 — Konsep Aplikasi Bergerak dalam SI (CPMK-1)
 Tiga karakteristik aplikasi bergerak yang menjadikan solusi mobile lebih tepat untuk layanan pengajuan surat keterangan mahasiswa adalah:
 
 1. Mobilitas dan Fleksibilitas Akses
@@ -25,7 +24,7 @@ Contoh penerapan: Mahasiswa dapat mengambil foto KTP atau mengunggah dokumen per
 
 ## Soal 2 — Dasar Pemrograman Dart
 
-erikut penjelasan fungsi setiap bagian kode Dart tersebut:
+Berikut penjelasan fungsi setiap bagian kode Dart:
 
 1. List<String>
 
@@ -43,7 +42,7 @@ Digunakan untuk memeriksa apakah teks yang dimasukkan kosong atau tidak. Jika pe
 
 Berfungsi untuk menghentikan proses di dalam fungsi tambahSurat() ketika ditemukan kesalahan. Dengan demikian, data kosong tidak akan diteruskan ke daftar surat.
 
-5. add
+5. daftarSurat.add(jenis)
 
 Digunakan untuk menambahkan data baru ke dalam List. Pada kode tersebut, daftarSurat.add(jenis) memasukkan jenis surat yang sudah lolos validasi ke dalam daftar.
 
@@ -51,13 +50,11 @@ Digunakan untuk menambahkan data baru ke dalam List. Pada kode tersebut, daftarS
 
 Digunakan untuk mengulang proses berdasarkan jumlah data yang tersimpan dalam daftar. Perulangan ini membantu menampilkan seluruh jenis surat satu per satu dengan nomor urut.
 
-Kesalahan umum jika validasi isEmpty dihapus:
+**Kesalahan umum jika validasi isEmpty dihapus:**
 
 Jika validasi isEmpty dihapus, pengguna dapat memasukkan data kosong sehingga data yang tidak memiliki informasi jenis surat tetap tersimpan di dalam daftar. Akibatnya, daftar surat menjadi tidak valid dan dapat membingungkan petugas administrasi ketika memproses pengajuan.
 
 ## Soal 3 — Struktur Flutter dan Widget
-
-Berikut fungsi masing-masing widget dalam struktur Flutter tersebut:
 
 1. MaterialApp
 
@@ -83,7 +80,7 @@ Digunakan untuk menampilkan tulisan pada layar. Contohnya, tulisan "Pilih jenis 
 
 Digunakan untuk menampilkan daftar data secara dinamis. Widget ini membuat item daftar sesuai jumlah data yang tersedia sehingga lebih efisien untuk menampilkan banyak jenis surat.
 
-Masalah jika ListView.builder diletakkan langsung di dalam Column:
+**Masalah jika ListView.builder diletakkan langsung di dalam Column:**
 
 Masalah yang dapat terjadi adalah munculnya error unbounded height atau tinggi ListView tidak memiliki batas yang jelas. Hal ini terjadi karena Column tidak memberikan batas tinggi tertentu kepada ListView sehingga Flutter kesulitan menentukan ukuran area daftar.
 
@@ -157,7 +154,6 @@ Berikut alur penggunaan aplikasi untuk proses pengajuan surat keterangan aktif k
 12. Mahasiswa membuka menu status pengajuan untuk melihat perkembangan surat.
 
 ## Soal 5 — UI/UX Mobile
-Dalam merancang halaman daftar 20 jenis surat pada aplikasi pengajuan surat, terdapat tiga prinsip UI/UX mobile yang perlu diperhatikan agar aplikasi mudah digunakan dan nyaman diakses melalui smartphone.
 
 1. Kesederhanaan Tampilan (Simplicity)
 
@@ -179,8 +175,7 @@ Alasan: Mahasiswa biasanya menggunakan aplikasi dalam waktu singkat. Dengan info
 
 ## Soal 6 — Navigasi dan Interaksi
 
-Dalam aplikasi pengajuan surat, navigasi digunakan untuk memudahkan mahasiswa berpindah dari halaman daftar surat ke halaman form pengajuan dan halaman detail status. Pada Flutter, navigasi tersebut dapat menggunakan widget Navigator.
-A. Implementasi Navigasi Antarhalaman
+**A. Implementasi Navigasi Antarhalaman**
 Terdapat tiga metode navigasi yang dapat digunakan:
 
 1. Navigator.push()
@@ -215,8 +210,7 @@ Digunakan untuk kembali ke halaman sebelumnya dengan menutup halaman yang sedang
 Contoh penerapan: Ketika mahasiswa membatalkan pengajuan atau ingin kembali ke daftar surat dari halaman form.
 Navigator.pop(context);
 
-
-B. Pengiriman Data Jenis Surat
+**B. Pengiriman Data Jenis Surat**
 Data jenis surat dikirim dari halaman daftar ke halaman form menggunakan parameter pada constructor.
 
 Contohnya, ketika mahasiswa memilih Surat Keterangan Aktif Kuliah, data tersebut diteruskan ke halaman form.
@@ -252,7 +246,8 @@ class FormPengajuanPage extends StatelessWidget {
 
 
 Dengan cara tersebut, halaman form dapat langsung menampilkan jenis surat yang dipilih mahasiswa tanpa harus memilih ulang.
-C. Feedback Setelah Form Dikirim
+
+**C. Feedback Setelah Form Dikirim**
 Setelah mahasiswa menekan tombol kirim, aplikasi perlu memberikan feedback agar pengguna mengetahui apakah pengajuan berhasil atau gagal.
 
 Contoh penerapan menggunakan SnackBar:
@@ -270,7 +265,7 @@ Jika pengajuan gagal, aplikasi menampilkan pesan kesalahan agar mahasiswa dapat 
 
 ## Soal 7 — Model Data dan State
 
-A. Alasan Setiap Field Menggunakan final
+**A. Alasan Setiap Field Menggunakan final**
 Pada model data PengajuanSurat, setiap field menggunakan final karena nilainya hanya dapat diisi satu kali ketika objek dibuat dan tidak dapat diubah setelahnya.
 
 Fungsi masing-masing field adalah:
@@ -280,37 +275,28 @@ Fungsi masing-masing field adalah:
 4. status: Menyimpan kondisi pengajuan, seperti menunggu, diproses, disetujui, atau ditolak.
 Penggunaan final membantu menjaga data agar tidak berubah secara tidak sengaja sehingga informasi pengajuan lebih konsisten.
 
-Mengapa id wajib ada?
+**Mengapa id wajib ada?**
 
 id wajib ada karena setiap pengajuan harus memiliki identitas yang berbeda. Misalnya, seorang mahasiswa mengajukan dua surat dengan jenis yang sama, sistem tetap dapat membedakan kedua pengajuan tersebut berdasarkan ID. ID juga memudahkan proses pencarian, pembaruan status, dan penghapusan data tertentu.
-B. Perbedaan StatelessWidget dan StatefulWidget
+
+**B. Perbedaan StatelessWidget dan StatefulWidget**
 StatelessWidget	StatefulWidget
 Tidak memiliki state yang dapat berubah selama widget digunakan.	Memiliki state yang dapat berubah selama widget digunakan.
 Cocok untuk menampilkan informasi tetap.	Cocok untuk halaman yang datanya dapat berubah.
 Tidak menggunakan setState untuk memperbarui tampilan.	Dapat menggunakan setState untuk memperbarui tampilan.
 
-Widget yang saya pilih: StatefulWidget.
+**Widget yang saya pilih: StatefulWidget.**
 
 Alasannya, halaman daftar pengajuan surat membutuhkan data yang dapat berubah. Contohnya, ketika mahasiswa menambahkan pengajuan baru, daftar harus langsung menampilkan data tersebut tanpa perlu membuka ulang aplikasi.
-C. Fungsi setState
+
+**C. Fungsi setState**
 setState() merupakan fungsi dalam Flutter yang digunakan untuk memberi tahu sistem bahwa terdapat perubahan data pada state sehingga tampilan widget perlu diperbarui.
-
-Contoh penerapan:
-List<PengajuanSurat> daftarSurat = [];
-
-void tambahSurat(PengajuanSurat surat) {
-  setState(() {
-    daftarSurat.add(surat);
-  });
-}
-
-
-Pada contoh tersebut, ketika mahasiswa menambahkan pengajuan surat, data dimasukkan ke dalam daftar dan Flutter akan membangun ulang tampilan agar data terbaru muncul di layar.
 
 ## Soal 8 — CRUD Lokal
 
 CRUD merupakan singkatan dari Create, Read, Update, dan Delete. Keempat operasi ini digunakan untuk mengelola data pengajuan surat yang tersimpan di dalam aplikasi.
-A. Empat Operasi CRUD dan Method List
+
+**A. Empat Operasi CRUD dan Method List**
 1. Create (Menambahkan Data)
 
 Create merupakan proses untuk menambahkan data pengajuan surat baru ke dalam daftar.
@@ -327,7 +313,6 @@ daftarSurat.add(
   ),
 );
 
-
 2. Read (Membaca Data)
 
 Read merupakan proses untuk mengambil dan menampilkan data pengajuan surat yang sudah tersimpan.
@@ -339,7 +324,6 @@ for (var surat in daftarSurat) {
   print(surat.jenis);
   print(surat.status);
 }
-
 
 3. Update (Mengubah Data)
 
@@ -361,7 +345,6 @@ if (index != -1) {
   );
 }
 
-
 4. Delete (Menghapus Data)
 
 Delete merupakan proses untuk menghapus pengajuan surat tertentu dari daftar.
@@ -374,14 +357,14 @@ daftarSurat.removeWhere(
 );
 
 
-B. Mengapa ID Digunakan sebagai Kunci Update dan Delete?
+**B. Mengapa ID Digunakan sebagai Kunci Update dan Delete?**
 ID digunakan sebagai kunci karena setiap pengajuan surat memiliki identitas unik yang tidak berubah meskipun posisi data dalam daftar berubah.
 
 Contohnya, mahasiswa memiliki tiga pengajuan surat dengan ID 001, 002, dan 003. Jika pengajuan dengan ID 001 dihapus, data lainnya tetap memiliki identitas masing-masing.
 
 ## Soal 9 — Persistensi Data Lokal
 
-A. Perbedaan In-Memory dan Persistensi Data
+**A. Perbedaan In-Memory dan Persistensi Data**
 1. Penyimpanan In-Memory
 
 In-memory merupakan penyimpanan data sementara di dalam memori aplikasi menggunakan variabel atau List. Data hanya tersedia selama aplikasi masih berjalan. Jika aplikasi ditutup atau dimulai ulang, data yang tersimpan dapat hilang.
@@ -405,12 +388,13 @@ await prefs.setString('nama', 'Mahasiswa');
 
 
 Dengan penyimpanan tersebut, data nama mahasiswa tetap tersedia ketika aplikasi dibuka kembali.
-B. Mengapa SharedPreferences Bersifat Asinkron (Future)?
+
+**B. Mengapa SharedPreferences Bersifat Asinkron (Future)?**
 Operasi shared_preferences bersifat asinkron karena proses membaca dan menyimpan data membutuhkan komunikasi dengan penyimpanan perangkat.
 
 Flutter menggunakan Future agar proses tersebut dapat berjalan tanpa harus menghentikan seluruh aktivitas aplikasi. Dengan demikian, tampilan aplikasi tetap dapat merespons interaksi pengguna selama proses penyimpanan berlangsung.
 
-Apa yang terjadi jika await diabaikan?
+**Apa yang terjadi jika await diabaikan?**
 
 Jika await tidak digunakan, program tidak menunggu proses penyimpanan selesai sebelum menjalankan perintah berikutnya. Akibatnya, data mungkin belum selesai tersimpan ketika aplikasi melanjutkan proses lainnya.
 
@@ -423,7 +407,8 @@ Future<void> simpanData() async {
 
 
 Pada contoh tersebut, await memastikan proses penyimpanan ditunggu hingga selesai sebelum fungsi melanjutkan ke perintah berikutnya.
-C. Contoh Situasi Penggunaan
+
+**C. Contoh Situasi Penggunaan**
 1. In-Memory Sudah Cukup
 
 Contohnya, ketika mahasiswa sedang mengisi formulir pengajuan surat dan data hanya digunakan sementara untuk menampilkan pratinjau sebelum dikirim. Data tidak harus disimpan secara permanen karena masih dalam tahap pengisian.
