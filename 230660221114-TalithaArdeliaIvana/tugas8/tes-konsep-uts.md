@@ -596,8 +596,4 @@ ListView.builder(
 );
 ```
 
-<<<<<<< HEAD
 Contoh tersebut menggambarkan pengelolaan data pada sisi aplikasi. Untuk penggunaan nyata, validasi ketersediaan buku dan penyimpanan transaksi harus dilakukan melalui backend dan database agar data peminjaman tetap konsisten serta dapat diakses oleh petugas perpustakaan.
-=======
-Contoh tersebut menggambarkan pengelolaan data pada sisi aplikasi. Untuk penggunaan nyata, validasi ketersediaan buku dan penyimpanan transaksi harus dilakukan melalui backend dan database agar data peminjaman tetap konsisten serta dapat diakses oleh petugas perpustakaan.
->>>>>>> 5044bf9 (update uts)
