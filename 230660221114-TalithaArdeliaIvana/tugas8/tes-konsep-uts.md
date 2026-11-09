@@ -4,7 +4,7 @@
 
 Tiga karakteristik aplikasi bergerak yang menjadikan solusi mobile lebih tepat untuk layanan pengajuan surat keterangan mahasiswa adalah:
 
-1. Mobilitas dan Fleksibilitas Akses
+**1. Mobilitas dan Fleksibilitas Akses**
 
 Aplikasi mobile dapat digunakan melalui smartphone kapan saja dan di mana saja tanpa harus datang langsung ke kampus. Mahasiswa dapat mengajukan surat keterangan meskipun sedang berada di luar lingkungan kampus.
 
