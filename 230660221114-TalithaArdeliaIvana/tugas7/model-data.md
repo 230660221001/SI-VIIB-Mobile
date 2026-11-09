@@ -31,18 +31,3 @@ Setiap field pada entitas `CatatanBelajar` memiliki sumber nilai yang berbeda, y
 | `isi` | Form Warga Belajar | Diisi oleh Warga Belajar untuk menyimpan materi, ringkasan, atau informasi pembelajaran. |
 | `diperbarui` | Sistem | Diisi secara otomatis berdasarkan waktu ketika catatan dibuat atau diperbarui. |
 | `disematkan` | Sistem / Interaksi Warga Belajar | Diatur melalui tindakan sematkan atau lepas sematan pada catatan. Nilai awalnya adalah `false`. |
-
-## 3. Aturan Pengelolaan Data
-
-1. Setiap catatan memiliki `id` yang unik.
-2. Warga Belajar dapat menambahkan catatan baru melalui form.
-3. Warga Belajar dapat melihat daftar catatan yang telah dibuat.
-4. Warga Belajar dapat mengubah judul dan isi catatan.
-5. Warga Belajar dapat menghapus catatan melalui dialog konfirmasi.
-6. Warga Belajar dapat menyematkan atau melepas sematan catatan.
-7. Catatan yang disematkan ditampilkan lebih dahulu daripada catatan yang tidak disematkan.
-8. Field `diperbarui` diperbarui secara otomatis ketika catatan dibuat atau diubah.
-
-## 4. Kesimpulan
-
-Model data `CatatanBelajar` dirancang untuk mendukung pengelolaan catatan pembelajaran oleh Warga Belajar. Penambahan field `disematkan` memungkinkan pengguna memprioritaskan catatan penting agar tetap mudah ditemukan meskipun jumlah catatan semakin banyak. Seluruh data pada MVP awal disimpan menggunakan `List<CatatanBelajar>` di dalam `State` aplikasi sehingga pengelolaan data dapat dilakukan tanpa backend atau database tambahan.
