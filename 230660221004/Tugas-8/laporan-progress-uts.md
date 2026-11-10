@@ -51,12 +51,6 @@ Keterbatasan yang diketahui: F-01, F-06, F-07, dan F-08 belum dibangun; F-02 dan
 | 3 | `<img width="326" height="459" alt="image" src="https://github.com/user-attachments/assets/b9af8ccc-152b-4138-99dc-fdad6225c76a" />
 ` | Dialog konfirmasi hapus |
 
-![Daftar pengajuan izin](screenshot-daftar.png)
-
-![Form pengajuan dengan validasi](screenshot-form.png)
-
-![Dialog konfirmasi hapus](screenshot-hapus.png)
-
 ## 5. Kendala dan Solusi Teknis
 
 | No. | Kendala | Cara Mengatasinya |
