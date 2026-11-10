@@ -44,9 +44,12 @@ Keterbatasan yang diketahui: F-01, F-06, F-07, dan F-08 belum dibangun; F-02 dan
 
 | No. | File | Bukti |
 |:---:|:-----|:------|
-| 1 | `screenshot-daftar.png` | Halaman utama / daftar data (daftar pengajuan izin setelah data ditambah) |
-| 2 | `screenshot-form.png` | Form pengisian data dengan pesan validasi |
-| 3 | `screenshot-hapus.png` | Dialog konfirmasi hapus |
+| 1 | `<img width="305" height="458" alt="image" src="https://github.com/user-attachments/assets/5e033402-86be-4f2e-a3ff-40cabfd8b24d" />
+` | Halaman utama / daftar data (daftar pengajuan izin setelah data ditambah) |
+| 2 | `<img width="282" height="470" alt="image" src="https://github.com/user-attachments/assets/955d48c7-4ff4-44b3-bb58-0c387e450820" />
+` | Form pengisian data dengan pesan validasi |
+| 3 | `<img width="326" height="459" alt="image" src="https://github.com/user-attachments/assets/b9af8ccc-152b-4138-99dc-fdad6225c76a" />
+` | Dialog konfirmasi hapus |
 
 ![Daftar pengajuan izin](screenshot-daftar.png)
 
