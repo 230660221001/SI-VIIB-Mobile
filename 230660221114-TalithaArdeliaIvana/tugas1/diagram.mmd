@@ -1,0 +1,13 @@
+flowchart LR
+    A["Aplikasi Mobile<br/>Akademik PKBM<br/>(Flutter)"]
+    B["Backend SI Akademik<br/>(REST API)"]
+    C[("Database<br/>Akademik PKBM")]
+
+    A -->|"HTTP Request<br/>(JSON)"| B
+    B -->|"HTTP Response<br/>(JSON)"| A
+    B -->|"Query atau<br/>Perubahan Data"| C
+    C -->|"Data hasil query"| B
+
+    style A fill:#ffffff,stroke:#172554,stroke-width:2px,color:#172554
+    style B fill:#ffffff,stroke:#172554,stroke-width:2px,color:#172554
+    style C fill:#ffffff,stroke:#172554,stroke-width:2px,color:#172554

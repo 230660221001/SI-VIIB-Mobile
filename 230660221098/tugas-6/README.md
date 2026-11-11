@@ -1,0 +1,2 @@
+Halaman Daftar Laporan (/), Halaman Detail Laporan (/detail), dan Halaman Form Buat Laporan (/form). Berkas yang dikumpulkan: navigation-flow.md (daftar route, diagram alur, dan alasan initialRoute), form-interaksi.dart (kode dengan initialRoute, Navigator.pushNamed dan pop, arguments, Form dengan validator, dan SnackBar), dua tangkapan layar, dan catatan-keputusan-navigasi.md.
+Deklarasi penggunaan AI: [gemini] — [membantu membenarkan kode yang eror]
