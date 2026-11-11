@@ -106,24 +106,26 @@ jobs:
                   fail "menyentuh data mahasiswa lain ($nim): $p"
                 fi
               done
-              # Aturan folder NIM: berkas wajib berada di dalam folder milik satu NIM
-              # (kelas B: <NIM>/... ; kelas A: tugas-N/<NIM-Nama>/...). Berkas yang
-              # diletakkan di luar folder NIM (mis. di root repo) ditolak.
-              if [ "$AUTHOR" != "yysofiyan" ]; then
-                case "$p" in
-                  README.md|.gitignore|.github/*) ;;
-                  *)
-                    nim_path=$(printf '%s\n' "$p" | cut -d/ -f1,2 | tr '/' '\n' \
-                      | tr -cs '0-9' '\n' | grep -E '^2306[0-9]{7,}$' | head -n1 || true)
-                    if [ -z "$nim_path" ]; then
-                      fail "berkas di luar folder NIM: $p"
-                    else
-                      PR_NIMS="${PR_NIMS:-} $nim_path"
-                    fi
-                    ;;
-                esac
-              fi
             done
+            # Aturan folder NIM: berkas WAJIB berada di dalam folder milik satu NIM
+            # (kelas B: <NIM>/... ; kelas A: tugas-N/<NIM-Nama>/...). Berkas yang
+            # diletakkan di luar folder NIM (mis. di root repo) ditolak.
+            # Hanya path BARU yang diperiksa: rename dari luar folder NIM ke folder
+            # sendiri (kebersihan submission) tetap boleh.
+            if [ "$AUTHOR" != "yysofiyan" ]; then
+              case "$filename" in
+                README.md|.gitignore|.github/*) ;;
+                *)
+                  nim_path=$(printf '%s\n' "$filename" | cut -d/ -f1,2 | tr '/' '\n' \
+                    | tr -cs '0-9' '\n' | grep -E '^2306[0-9]{7,}$' | head -n1 || true)
+                  if [ -z "$nim_path" ]; then
+                    fail "berkas di luar folder NIM: $filename"
+                  else
+                    PR_NIMS="${PR_NIMS:-} $nim_path"
+                  fi
+                  ;;
+              esac
+            fi
           done <<<"$FILES_TSV"
 
           if [ "$AUTHOR" != "yysofiyan" ]; then
