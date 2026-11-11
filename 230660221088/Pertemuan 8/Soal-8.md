@@ -1,0 +1,5 @@
+CRUD terdiri dari empat operasi. **Create** digunakan untuk menambahkan pengajuan baru ke dalam List, biasanya dengan method `add()`. **Read** digunakan untuk membaca dan menampilkan data, misalnya dengan `ListView.builder` yang mengambil elemen berdasarkan indeks.
+
+**Update** digunakan untuk mengubah data yang sudah ada. Salah satu caranya adalah mencari posisi data dengan `indexWhere()`, kemudian mengganti objek lama dengan objek baru. **Delete** digunakan untuk menghapus data, misalnya dengan `removeWhere()` berdasarkan kondisi tertentu.
+
+ID digunakan sebagai kunci update dan delete karena ID tetap melekat pada data meskipun urutan daftar berubah. Sebaliknya, index menunjukkan posisi sementara. Jika data pada posisi pertama dihapus, index data berikutnya akan bergeser. Jika index lama masih digunakan sebagai identitas, aplikasi dapat mengubah atau menghapus data yang salah.

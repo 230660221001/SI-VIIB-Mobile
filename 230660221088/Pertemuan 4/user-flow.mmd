@@ -1,0 +1,24 @@
+flowchart TD
+    S([Mulai: Petugas membuka aplikasi]) --> A[Halaman login petugas]
+    A --> B[Petugas memasukkan akun dan kata sandi]
+    B --> C{Akun dan kata sandi valid?}
+    C -- Tidak --> D[Tampilkan pesan login gagal]
+    D --> A
+    C -- Ya --> E[Dashboard petugas]
+    E --> F[Buka menu laporan masuk]
+    F --> G[Pilih satu laporan masyarakat]
+    G --> H[Periksa jenis, lokasi, waktu, deskripsi, kontak, dan foto jika tersedia]
+    H --> I{Informasi wajib lengkap?}
+    I -- Tidak --> J[Tandai Perlu Klarifikasi dan hubungi pelapor melalui kontak yang tersedia]
+    J --> K[Petugas menerima informasi tambahan melalui kanal komunikasi yang tersedia]
+    K --> H
+    I -- Ya --> L[Petugas menilai kebenaran dan kelayakan laporan]
+    L --> M{Laporan dapat diverifikasi?}
+    M -- Tidak --> N[Tetapkan Ditolak dan catat alasan]
+    N --> O[Status penolakan tersimpan]
+    O --> P([Tujuan tercapai: laporan ditolak dengan alasan tercatat])
+    M -- Ya --> Q[Tetapkan status laporan Terverifikasi]
+    Q --> R[Catat laporan sebagai kejadian bencana]
+    R --> T[Tetapkan status awal penanganan Pemantauan]
+    T --> U[Tampilkan kejadian pada daftar kejadian terverifikasi]
+    U --> V([Tujuan tercapai: kejadian terverifikasi dan tercatat])

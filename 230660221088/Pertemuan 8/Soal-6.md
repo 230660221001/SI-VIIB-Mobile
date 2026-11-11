@@ -1,0 +1,5 @@
+`Navigator.push()` digunakan untuk membuka halaman baru dengan objek `Route`. `Navigator.pushNamed()` digunakan untuk membuka halaman berdasarkan nama route yang sudah didaftarkan pada `MaterialApp`, misalnya route `/form-pengajuan` atau `/detail-status`. `Navigator.pop()` digunakan untuk menutup halaman aktif dan kembali ke halaman sebelumnya.
+
+Pada halaman daftar, jenis surat yang dipilih dapat dikirim ke halaman form melalui `arguments` saat memanggil `pushNamed`, atau melalui parameter konstruktor jika halaman dibuat langsung. Halaman form menerima data tersebut agar jenis surat yang dipilih dapat ditampilkan tanpa harus dipilih ulang.
+
+Setelah formulir dikirim, aplikasi memvalidasi input terlebih dahulu. Jika ada data yang belum sesuai, pesan kesalahan ditampilkan pada field terkait. Jika berhasil, aplikasi menampilkan `SnackBar` sebagai pemberitahuan bahwa pengajuan telah diterima. Halaman kemudian dapat kembali ke daftar atau membuka halaman detail status.

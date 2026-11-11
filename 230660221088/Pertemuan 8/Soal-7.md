@@ -1,0 +1,5 @@
+Setiap field pada model `PengajuanSurat` dibuat `final` agar nilainya tidak dapat ditetapkan ulang setelah objek dibuat. Cara ini membantu menjaga data pengajuan tetap konsisten. Field `id` wajib ada karena setiap pengajuan perlu memiliki identitas unik. Dua pengajuan dapat memiliki jenis surat yang sama, tetapi tetap harus dapat dibedakan melalui ID.
+
+`StatelessWidget` digunakan untuk tampilan yang tidak mengelola data yang berubah di dalam state-nya. `StatefulWidget` digunakan ketika halaman perlu menyimpan dan mengubah data selama aplikasi berjalan. Karena halaman daftar pengajuan harus dapat menampilkan data baru atau perubahan status, halaman tersebut lebih tepat menggunakan `StatefulWidget`.
+
+`setState()` memberi tahu Flutter bahwa data pada state telah berubah sehingga tampilan perlu dibangun ulang. Jika data ditambahkan ke List tanpa `setState()`, isi List mungkin sudah berubah di memori, tetapi tampilan tidak otomatis diperbarui sehingga pengajuan baru belum terlihat oleh pengguna.
