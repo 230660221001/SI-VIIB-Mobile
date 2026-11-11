@@ -54,18 +54,11 @@
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/230660221098">
-        <img src="https://avatars.githubusercontent.com/u/202419447?v=4&s=200" width="100px;" alt="230660221098"/><br>
-        <sub><b>230660221098</b></sub>
+      <a href="https://github.com/230660221004">
+        <img src="https://avatars.githubusercontent.com/u/203217918?v=4&s=200" width="100px;" alt="230660221004"/><br>
+        <sub><b>Rian Rianto</b></sub>
       </a><br>
-      <sub>230660221098</sub>
-    </td>
-    <td align="center">
-      <a href="https://github.com/230660221001">
-        <img src="https://avatars.githubusercontent.com/u/209082894?v=4&s=200" width="100px;" alt="230660221001"/><br>
-        <sub><b>Ghatan Zalfaa Kautsar</b></sub>
-      </a><br>
-      <sub>230660221001</sub>
+      <sub>230660221004</sub>
     </td>
     <td align="center">
       <a href="https://github.com/230660221030">
@@ -74,14 +67,21 @@
       </a><br>
       <sub>230660221030</sub>
     </td>
+    <td align="center">
+      <a href="https://github.com/230660221001">
+        <img src="https://avatars.githubusercontent.com/u/209082894?v=4&s=200" width="100px;" alt="230660221001"/><br>
+        <sub><b>Ghatan Zalfaa Kautsar</b></sub>
+      </a><br>
+      <sub>230660221001</sub>
+    </td>
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/230660221004">
-        <img src="https://avatars.githubusercontent.com/u/203217918?v=4&s=200" width="100px;" alt="230660221004"/><br>
-        <sub><b>Rian Rianto</b></sub>
+      <a href="https://github.com/230660221098">
+        <img src="https://avatars.githubusercontent.com/u/202419447?v=4&s=200" width="100px;" alt="230660221098"/><br>
+        <sub><b>230660221098</b></sub>
       </a><br>
-      <sub>230660221004</sub>
+      <sub>230660221098</sub>
     </td>
     <td align="center">
       <a href="https://github.com/230660221126">
@@ -137,20 +137,20 @@
       <sub>230660221113</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/PaizalRizkiNugraha">
-        <img src="https://avatars.githubusercontent.com/u/203218494?v=4&s=200" width="100px;" alt="PaizalRizkiNugraha"/><br>
-        <sub><b>230660221012</b></sub>
-      </a><br>
-      <sub>230660221012</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
       <a href="https://github.com/Panjii7">
         <img src="https://avatars.githubusercontent.com/u/203955599?v=4&s=200" width="100px;" alt="Panjii7"/><br>
         <sub><b>230660221088_Panji</b></sub>
       </a><br>
       <sub>230660221088</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/PaizalRizkiNugraha">
+        <img src="https://avatars.githubusercontent.com/u/203218494?v=4&s=200" width="100px;" alt="PaizalRizkiNugraha"/><br>
+        <sub><b>230660221012</b></sub>
+      </a><br>
+      <sub>230660221012</sub>
     </td>
     <td align="center">
       <a href="https://github.com/230660221100">
