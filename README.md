@@ -31,6 +31,13 @@
   </tr>
   <tr>
     <td align="center">
+      <a href="https://github.com/230660221114">
+        <img src="https://avatars.githubusercontent.com/u/203218116?v=4&s=200" width="100px;" alt="230660221114"/><br>
+        <sub><b>Talitha Ardelia Ivana</b></sub>
+      </a><br>
+      <sub>230660221114</sub>
+    </td>
+    <td align="center">
       <a href="https://github.com/FahreziEzzi">
         <img src="https://avatars.githubusercontent.com/u/136789115?v=4&s=200" width="100px;" alt="FahreziEzzi"/><br>
         <sub><b>Fahrezi</b></sub>
@@ -44,6 +51,8 @@
       </a><br>
       <sub>230660221008</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/230660221098">
         <img src="https://avatars.githubusercontent.com/u/202419447?v=4&s=200" width="100px;" alt="230660221098"/><br>
@@ -51,8 +60,6 @@
       </a><br>
       <sub>230660221098</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/230660221001">
         <img src="https://avatars.githubusercontent.com/u/209082894?v=4&s=200" width="100px;" alt="230660221001"/><br>
@@ -67,13 +74,6 @@
       </a><br>
       <sub>230660221030</sub>
     </td>
-    <td align="center">
-      <a href="https://github.com/230660221126">
-        <img src="https://avatars.githubusercontent.com/u/203413461?v=4&s=200" width="100px;" alt="230660221126"/><br>
-        <sub><b>Nabila Apriliani</b></sub>
-      </a><br>
-      <sub>230660221126</sub>
-    </td>
   </tr>
   <tr>
     <td align="center">
@@ -84,11 +84,27 @@
       <sub>230660221004</sub>
     </td>
     <td align="center">
+      <a href="https://github.com/230660221126">
+        <img src="https://avatars.githubusercontent.com/u/203413461?v=4&s=200" width="100px;" alt="230660221126"/><br>
+        <sub><b>Nabila Apriliani</b></sub>
+      </a><br>
+      <sub>230660221126</sub>
+    </td>
+    <td align="center">
       <a href="https://github.com/230660221094">
         <img src="https://avatars.githubusercontent.com/u/202504494?v=4&s=200" width="100px;" alt="230660221094"/><br>
         <sub><b>Kikania Zahra</b></sub>
       </a><br>
       <sub>230660221094</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/230660221024">
+        <img src="https://avatars.githubusercontent.com/u/211926361?v=4&s=200" width="100px;" alt="230660221024"/><br>
+        <sub><b>230660221024</b></sub>
+      </a><br>
+      <sub>230660221024</sub>
     </td>
     <td align="center">
       <a href="https://github.com/230660221033">
@@ -97,8 +113,6 @@
       </a><br>
       <sub>230660221033</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/230660221085">
         <img src="https://avatars.githubusercontent.com/u/204163481?v=4&s=200" width="100px;" alt="230660221085"/><br>
@@ -106,6 +120,8 @@
       </a><br>
       <sub>230660221085</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/akhydianerwin">
         <img src="https://avatars.githubusercontent.com/u/203215930?v=4&s=200" width="100px;" alt="akhydianerwin"/><br>
@@ -120,28 +136,12 @@
       </a><br>
       <sub>230660221113</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/PaizalRizkiNugraha">
         <img src="https://avatars.githubusercontent.com/u/203218494?v=4&s=200" width="100px;" alt="PaizalRizkiNugraha"/><br>
         <sub><b>230660221012</b></sub>
       </a><br>
       <sub>230660221012</sub>
-    </td>
-    <td align="center">
-      <a href="https://github.com/230660221024">
-        <img src="https://avatars.githubusercontent.com/u/211926361?v=4&s=200" width="100px;" alt="230660221024"/><br>
-        <sub><b>230660221024</b></sub>
-      </a><br>
-      <sub>230660221024</sub>
-    </td>
-    <td align="center">
-      <a href="https://github.com/230660221114">
-        <img src="https://avatars.githubusercontent.com/u/203218116?v=4&s=200" width="100px;" alt="230660221114"/><br>
-        <sub><b>Talitha Ardelia Ivana</b></sub>
-      </a><br>
-      <sub>230660221114</sub>
     </td>
   </tr>
   <tr>
@@ -150,7 +150,7 @@
         <img src="https://avatars.githubusercontent.com/u/203955599?v=4&s=200" width="100px;" alt="Panjii7"/><br>
         <sub><b>230660221088_Panji</b></sub>
       </a><br>
-      <sub>Mahasiswa</sub>
+      <sub>230660221088</sub>
     </td>
     <td align="center">
       <a href="https://github.com/230660221100">
