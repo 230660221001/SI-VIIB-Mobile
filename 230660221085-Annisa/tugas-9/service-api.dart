@@ -30,8 +30,9 @@ class DataPengajuan {
       'Ujian Tengah Semester', 'Pengerjaan tugas akhir', 'Workshop desain UI/UX', 'Kegiatan ekstrakurikuler'
     ];
 
-    // Mengambil data berdasarkan ID (dikurangi 1 agar pas indexnya)
-    final index = (id - 1) % listRuang.length;
+    // Mengambil data berdasarkan ID (dikurangi 1 agar pas indexnya).
+    // ID dari server bisa 0 atau negatif, jadi dijaga agar tidak di luar rentang list.
+    final index = id > 0 ? (id - 1) % listRuang.length : 0;
 
     return DataPengajuan(
       id: id,
@@ -60,32 +61,54 @@ class LaboratoriumService {
 
   static Future<List<DataPengajuan>> ambilDaftar() async {
     final url = Uri.parse('$_baseUrl/posts');
+
+    late final http.Response response;
     try {
-      final response = await http.get(url).timeout(_timeout);
-      if (response.statusCode != 200) throw Exception('Server status ${response.statusCode}');
-      final List<dynamic> dataMentah = jsonDecode(response.body) as List<dynamic>;
-      return dataMentah.take(10).map((item) => DataPengajuan.fromJson(item as Map<String, dynamic>)).toList();
+      response = await http.get(url).timeout(_timeout);
     } on TimeoutException {
       throw Exception('Waktu tunggu habis (timeout).');
-    } catch (e) {
+    } catch (_) {
       throw Exception('Gagal memuat data. Periksa koneksi internet.');
+    }
+
+    if (response.statusCode != 200) {
+      throw Exception('Server merespons status ${response.statusCode}.');
+    }
+
+    try {
+      final List<dynamic> dataMentah = jsonDecode(response.body) as List<dynamic>;
+      return dataMentah.take(10).map((item) => DataPengajuan.fromJson(item as Map<String, dynamic>)).toList();
+    } catch (_) {
+      throw Exception('Format data dari server tidak dikenali.');
     }
   }
 
   static Future<DataPengajuan> kirimPengajuan(DataPengajuanBaru dataBaru) async {
     final url = Uri.parse('$_baseUrl/posts');
+
+    late final http.Response response;
     try {
-      final response = await http.post(
-        url,
-        headers: {'Content-Type': 'application/json; charset=UTF-8'},
-        body: jsonEncode(dataBaru.toJson()),
-      ).timeout(_timeout);
-      if (response.statusCode != 201 && response.statusCode != 200) throw Exception('Gagal (HTTP ${response.statusCode})');
-      return DataPengajuan.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
+      response = await http
+          .post(
+            url,
+            headers: {'Content-Type': 'application/json; charset=UTF-8'},
+            body: jsonEncode(dataBaru.toJson()),
+          )
+          .timeout(_timeout);
     } on TimeoutException {
       throw Exception('Waktu tunggu habis (timeout).');
-    } catch (e) {
+    } catch (_) {
       throw Exception('Gagal mengirim data. Periksa koneksi internet.');
+    }
+
+    if (response.statusCode != 201 && response.statusCode != 200) {
+      throw Exception('Server menolak permintaan (HTTP ${response.statusCode}).');
+    }
+
+    try {
+      return DataPengajuan.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
+    } catch (_) {
+      throw Exception('Format data dari server tidak dikenali.');
     }
   }
 }
