@@ -1,2 +1,12 @@
-pab_p1_230660221001/
-pab_tugas3/
+# ============================================================
+# Project Flutter lokal (tidak perlu di-push ke repo kelas)
+# ============================================================
+# Tanda bintang (*) akan mengabaikan semua folder yang diawali "pab_"
+pab_*/
+
+# ============================================================
+# File sistem operasi
+# ============================================================
+Thumbs.db
+Desktop.ini
+.DS_Store
